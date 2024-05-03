@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom"
 
-const textoOpcoes = ['Certificados', 'Portifolio', 'Curriculo', 'Contato'];
+const textoOpcoes = ['Certificados', 'Portfolio', 'Curriculo', 'Contato'];
 
 const Opcao = styled.li`
   min-width: 120px;
@@ -45,15 +45,15 @@ const Opcoes = styled.ul`
 `
 
 function OpcoesHeader() {
-    return(
-      <Opcoes>
-        {textoOpcoes.map( (texto) => (
-          <Link to={`/${texto.toLowerCase()}`} key={texto}>
-            <Opcao><p>{texto}</p></Opcao>
-          </Link> 
-        ) ) }
-      </Opcoes>
-    )
+  return (
+    <Opcoes>
+      {textoOpcoes.map((texto) => (
+        <Link to={`/${texto.toLowerCase()}`} key={texto}>
+          <Opcao><p>{texto}</p></Opcao>
+        </Link>
+      ))}
+    </Opcoes>
+  )
 }
 
 export default OpcoesHeader;

@@ -38,15 +38,15 @@ const GlobalStyle = createGlobalStyle`
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle/>
+    <GlobalStyle />
     <BrowserRouter>
-      <Header/>
+      <Header />
       <Routes>
-        <Route path='/portifolio' element={<Portifolio/>}/>
-        <Route path='/curriculo' element={<Curriculo/>}/>
-        <Route path='/certificados' element={<Certificacoes/>}/>
-        <Route path='/contato' element={<ContatoTela/>}/>
-        <Route path='/' element={ <Home/> } />
+        <Route path='/portfolio' element={<Portifolio />} />
+        <Route path='/curriculo' element={<Curriculo />} />
+        <Route path='/certificados' element={<Certificacoes />} />
+        <Route path='/contato' element={<ContatoTela />} />
+        <Route path='/' element={<Home />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
